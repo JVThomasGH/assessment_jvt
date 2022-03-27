@@ -1,3 +1,6 @@
+import os
+from datetime import datetime
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -30,6 +33,17 @@ def setup(request):
                          "role": "Customer", "email": "customer@mail.com", "cell": "083444"}])
 def data_set(request):
     return request.param
+
+
+def pytest_html_report_title(report):
+    report.title = "Assessment API and Web test report"
+
+
+@pytest.hookimpl(tryfirst=True)
+def pytest_configure(config):
+    if not os.path.exists('./reports'):
+        os.makedirs('./reports')
+    config.option.htmlpath = './reports/' + datetime.now().strftime("%d-%m-%Y_%H-%M-%S") + ".html"
 
 
 @pytest.mark.hookwrapper
