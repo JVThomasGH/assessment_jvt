@@ -1,0 +1,5 @@
+requests~=2.27.1
+setuptools==61.1.0
+assertpy~=1.1
+pytest~=7.1.1
+selenium~=4.1.3
