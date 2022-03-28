@@ -1,9 +1,9 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='Assessment',
     version='1.0',
-    packages=['api_dogs'],
+    packages=find_packages(),
     url='https://dog.ceo/dog-api/',
     license='',
     author='jodyvthomas',
