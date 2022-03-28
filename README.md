@@ -20,10 +20,11 @@ The project structure from root folder is as follows:
   To install the framework:
     After cloning from VCS:
       Ensure that Python 3.10.xxx is installed and added to Windows System Path.
-      Open the project preferbly with Pycharm IDE
-      In Pycarm settings, select File > Settings and add a new Python virtual envoronment.
-      In Pycharm, select Tools > Run setup.py
+      Open the project preferably with Pycharm IDE
+      In Pycharm settings, select File > Settings and add a new Python virtual environment.
+      In Pycharm, select Tools > Run setup.py > choose 'develop' option.
+      Open the setup.py file and install requirement when prompted
       The tests are then ready to execute from within Pycharm run or from a Command Prompt window: pytest
       
    Test logs can be viewed in the /logs folder
-   HTML Report (with screenshot apon failure) can be viewed in the report.html file
+   HTML Report (with screenshot upon failure) can be viewed in the report.html file
